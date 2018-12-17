@@ -14,19 +14,31 @@ namespace switchStatements
             Console.WriteLine("Topic 3: SWITCH STATEMENTS");
 
             //----------Guess My Favorite Pet----------//
-
+            /*
             Random numberGenerator = new Random();
 
+            
             string favePet01 = "dog";
+            string favePet02 = "cat";
+            string favePet03 = "sheep";
 
             Console.WriteLine("Guess My Favourite Pet");
-            string answer = (Console.ReadLine());
+            string answer = Console.ReadLine();
 
             if (answer == favePet01)
             {
                 Console.WriteLine("Woof! You guessed correctly.");
             }
+            else if (answer == favePet02)
+            {
+                Console.WriteLine("Sorry, no. Cat is not the correct answer.");
+            }
+            else if (answer == favePet03)
+            {
+                Console.WriteLine("Baaaa! The correct answer is not sheep.");
+            }
             else
+
             {
                 int responseIndex = numberGenerator.Next(1, 4);
 
@@ -51,42 +63,49 @@ namespace switchStatements
                 Console.ReadLine();
                 Console.Clear();
 
+            }
 
-
-
+    */
 
                 //------What is the price of the fruit?------//
 
-                //Console.WriteLine("Welcome to the next task where you can search for the per kilogram price of some different fruits.");
+                Console.WriteLine("Welcome to the next task where you can search for the per kilogram price of some different fruits.");
+                Random numberGenerator = new Random();
 
 
-                //const double Apples = 1.25;
-                //const double Bananas = 3.15;
-                //const double Kiwifruit = 4.65;
-                //const double Oranges = 2.75;
+                const double apples = 1.25;
+                const double bananas = 3.15;
+                const double kiwifruit = 4.65;
+                const double oranges = 2.75;
 
-                //Console.WriteLine("Enter the type of fruit you'd like tp price-check.");
-                //string userInput = Convert.ToString(Console.ReadLine());
+                Console.WriteLine("Enter the type of fruit you'd like to price-check.");
+                double userInput = Convert.ToDouble(Console.ReadLine());
 
-                //switch(fruitName)
-                //{ 
-                //case 1:
-                //    Console.WriteLine(1.25);
-                //    break;
-                //case 2:
-                //    Console.WriteLine(3.15);
-                //    break;
-                //case 3:
-                //    Console.WriteLine(4.65);
-                //    break;
-                //case 4:
-                //    Console.WriteLine(2.75);
-                //    break;
-                //default:
-                //Console.WriteLine($"An unexpected value has been entered({fruitName})");
-                //break;
-                //}
+            if (userInput == apples) {
+                Console.WriteLine("Apples cost $1.25 per kilogram");
+            } else if (userInput == bananas) {
+                Console.WriteLine("The price of bananas is $3.15 per kg.");
+            } else if (userInput == kiwifruit) {
+                Console.WriteLine("Kiwifruit is $4.65 per kg.");
+            } else if (userInput == oranges) {
+                Console.WriteLine("Oranges will cost you $2.75 per kilogram.");
+            } else {
+                int responseIndex = numberGenerator.Next(1, 3);
+            
+                switch (responseIndex)
+                { 
+                case 1:
+                    Console.WriteLine("We don't have a price for that fruit.");
+                    break;
+                case 2:
+                    Console.WriteLine("Sorry, that fruit is not in stock.");
+                    break;
+                default:
+                Console.WriteLine($"An unexpected value has been entered({responseIndex})");
+                break;
+                }
             }
+
         }
     }
 }
