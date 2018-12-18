@@ -81,7 +81,7 @@ namespace switchStatements
                 Console.WriteLine("Enter the type of fruit you'd like to price-check.");
                 double userInput = Convert.ToDouble(Console.ReadLine());
 
-            if (userInput == apples) {
+            if (userInput == "apples") {
                 Console.WriteLine("Apples cost $1.25 per kilogram");
             } else if (userInput == bananas) {
                 Console.WriteLine("The price of bananas is $3.15 per kg.");

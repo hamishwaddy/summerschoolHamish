@@ -148,6 +148,8 @@ namespace topicThreeExercises
 
             Console.WriteLine("PART SIX: Palindrome");
             Console.WriteLine("Think of a 3-letter palindrome.\nIt must begin and end with the same letter and have a vowel as the middle letter.");
+
+
             Console.Write("Type the first letter of your palindrome: ");
             string letter1 = Console.ReadLine();
             Console.Write("Type the second letter (a vowel) of your palindrome: ");
@@ -160,7 +162,7 @@ namespace topicThreeExercises
             if (letter1 == letter3)
             {
                 if (letter2 == "a" || letter2 = "e" || letter2 = "i" || letter2 = "o" || letter2 = "u")
-                Console.WriteLine("Well done, your word '{0}{1}{2}' is a palindrome.", letter1, letter2, letter3);
+                Console.WriteLine("Well done, your word: '{0}{1}{2}' is a palindrome.", letter1, letter2, letter3);
                 else 
                 Console.WriteLine("This is not an actual word.");
             }
