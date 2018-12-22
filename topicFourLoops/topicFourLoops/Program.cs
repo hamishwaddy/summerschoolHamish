@@ -14,18 +14,12 @@ namespace topicFourLoops
             Console.WriteLine(">>> while loop <<<");
             int[] arr = new int[4];
            
-           int i = 0;
+           int i = 3;
             while (i >= 3 && i <= 7) {
-                Console.WriteLine(arr[0], i);
+                Console.WriteLine(i+"\t"+i*10+"\t"+i*100+"\t"+i*1000);
                 i++;
                 }
-
-                while (i >= 3 && <= 7) {
-                Console.WriteLine(arr[1], i * 10);
-                i++;
-                }
-
-
+            
             Console.ReadKey();
         }
     }
