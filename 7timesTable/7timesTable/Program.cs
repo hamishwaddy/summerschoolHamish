@@ -44,11 +44,11 @@ namespace _7timesTable
             //-----------------------------//
             Console.WriteLine("\n>>> do while loop <<<");
             int n = 1;
+            int answer = n * userInput;
+
             do
             {
-                int answer = n * userInput;
                 Console.WriteLine("{0} x {1} = {2}", n, userInput, answer);
-                //Console.WriteLine(n);
                 n++;
             } while (n <= 12);
 
