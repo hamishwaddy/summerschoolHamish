@@ -25,7 +25,7 @@ namespace _7timesTable
             for (int x = 1; x<=12; x++)
             {
                int answer = x * userInput;
-        Console.WriteLine("{0} x {1} = {2}", x, userInput, answer);
+               Console.WriteLine("{0} x {1} = {2}", x, userInput, answer);
             }
 
             //-----------------------------//
@@ -44,13 +44,13 @@ namespace _7timesTable
             //-----------------------------//
             Console.WriteLine("\n>>> do while loop <<<");
             int n = 1;
-            int answer = n * userInput;
 
             do
             {
+                int answer = n * userInput;
                 Console.WriteLine("{0} x {1} = {2}", n, userInput, answer);
                 n++;
-            } while (n <= 12);
+            } while (n<= 12);
 
             
             Console.ReadKey();
