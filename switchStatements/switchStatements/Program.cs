@@ -12,99 +12,67 @@ namespace switchStatements
             //-----------------------------------------//
 
             Console.WriteLine("Topic 3: SWITCH STATEMENTS");
-
-            //----------Guess My Favorite Pet----------//
-            /*
-            Random numberGenerator = new Random();
-
             
-            string favePet01 = "dog";
-            string favePet02 = "cat";
-            string favePet03 = "sheep";
 
-            Console.WriteLine("Guess My Favourite Pet");
-            string answer = Console.ReadLine();
+                    //----------Guess My Favorite Pet----------//
+                    
 
-            if (answer == favePet01)
-            {
-                Console.WriteLine("Woof! You guessed correctly.");
-            }
-            else if (answer == favePet02)
-            {
-                Console.WriteLine("Sorry, no. Cat is not the correct answer.");
-            }
-            else if (answer == favePet03)
-            {
-                Console.WriteLine("Baaaa! The correct answer is not sheep.");
-            }
-            else
+                    Console.WriteLine("Guess My Favourite Pet\nChoose between sheep / dog / horse.");
+                    string pet = Console.ReadLine().ToLower();
 
-            {
-                int responseIndex = numberGenerator.Next(1, 4);
-
-                switch (responseIndex)
-                {
-                    case 1:
-                        Console.WriteLine("No, not that animal!");
+                    switch (pet) {
+                        case "sheep":
+                        case "dog":
+                            Console.WriteLine("Sorry, incorrect.");
+                            break;
+                        case "horse":
+                            Console.WriteLine("That's the one - you guessed right!");
                         break;
-                    case 2:
-                        Console.WriteLine("Sorry, that's not right.");
-                        break;
-                    case 3:
-                        Console.WriteLine("You'll have to try again.");
-                        break;
-                    default:
-                        Console.WriteLine($"An unexpected value({responseIndex})");
-                        break;
-                }
+                        default:
+                            Console.WriteLine("Sorry, that response wasn't an option.");
+                    break;     
+                    }
+
+                        Console.WriteLine("This is the end of this task. Press ENTER to continue.");
+                        Console.ReadLine();
+                        Console.Clear();
+
+                    
 
 
-                Console.WriteLine("This is the end of this task. Press ENTER to continue.");
-                Console.ReadLine();
-                Console.Clear();
-
-            }
-
-    */
 
                 //------What is the price of the fruit?------//
 
-                Console.WriteLine("Welcome to the next task where you can search for the per kilogram price of some different fruits.");
-                Random numberGenerator = new Random();
+            Console.WriteLine("Welcome to the next task where you can search for the per kilogram price of some different fruits.\nChoose between apples, bananas, kiwifruit & oranges.");
+            Console.Write("type in the name of the fruit you'd like to check: ");
+            string fruit = Console.ReadLine().ToLower();
+            string response;
 
-
-                const double apples = 1.25;
-                const double bananas = 3.15;
-                const double kiwifruit = 4.65;
-                const double oranges = 2.75;
-
-                Console.WriteLine("Enter the type of fruit you'd like to price-check.");
-                double userInput = Convert.ToDouble(Console.ReadLine());
-
-            if (userInput == "apples") {
-                Console.WriteLine("Apples cost $1.25 per kilogram");
-            } else if (userInput == bananas) {
-                Console.WriteLine("The price of bananas is $3.15 per kg.");
-            } else if (userInput == kiwifruit) {
-                Console.WriteLine("Kiwifruit is $4.65 per kg.");
-            } else if (userInput == oranges) {
-                Console.WriteLine("Oranges will cost you $2.75 per kilogram.");
-            } else {
-                int responseIndex = numberGenerator.Next(1, 3);
-            
-                switch (responseIndex)
-                { 
-                case 1:
-                    Console.WriteLine("We don't have a price for that fruit.");
+            switch (fruit)
+            {
+                case "apples":
+                    response = "\nApples\t$1.25 per kg";
                     break;
-                case 2:
-                    Console.WriteLine("Sorry, that fruit is not in stock.");
+                case "bananas":
+                    response = "\nBananas\t$3.15 per kg";
+                    break;
+                case "kiwifruit":
+                    response = "\nKiwifruit\t$4.65 per kg";
+                    break;
+                case "oranges":
+                    response = "\nOranges\t$2.75 per kg";
                     break;
                 default:
-                Console.WriteLine($"An unexpected value has been entered({responseIndex})");
-                break;
-                }
+                    response = "\nThat entry is invalid.";
+                    break;
             }
+            Console.WriteLine(response);
+
+
+            Console.ReadKey();
+
+            
+            
 
         }
     }
