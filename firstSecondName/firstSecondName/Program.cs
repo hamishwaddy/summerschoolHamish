@@ -6,9 +6,9 @@ namespace firstSecondName
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter your first name: ");
+            Console.Write("Please type your first name and press [enter]: ");
             string firstName = Console.ReadLine();
-            Console.WriteLine("Now type your last name: ");
+            Console.Write("Now type your last name and press [enter]: ");
             string lastName = Console.ReadLine();
             Display(firstName, lastName);
 
@@ -19,9 +19,12 @@ namespace firstSecondName
         {
             Console.WriteLine("MY FULL NAME");
             Console.WriteLine("{0} {1}", _firstName, _lastName );
+
+            Console.WriteLine("\nPress any key to exit.");
+            Console.ReadKey();
         }
 
-
+        
     }
 }
 

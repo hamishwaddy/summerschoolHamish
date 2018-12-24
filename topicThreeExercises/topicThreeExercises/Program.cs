@@ -156,12 +156,12 @@ namespace topicThreeExercises
             string letter2 = Console.ReadLine();
             Console.Write("Type the third letter of your palindrome: ");
             string letter3 = Console.ReadLine();
-            //Console.WriteLine("Here is your word: {0}{1}{2}", letter1,letter2,letter3);
+            //Console.WriteLine("Here is your word: {0}-{1}-{2}", letter1,letter2,letter3);
 
 
             if (letter1 == letter3)
             {
-                if (letter2 == "a" || letter2 = "e" || letter2 = "i" || letter2 = "o" || letter2 = "u")
+                if (letter2 == "a" || letter2 == "e" || letter2 == "i" || letter2 == "o" || letter2 == "u")
                 Console.WriteLine("Well done, your word: '{0}{1}{2}' is a palindrome.", letter1, letter2, letter3);
                 else 
                 Console.WriteLine("This is not an actual word.");
