@@ -77,9 +77,9 @@ namespace topicThreeAllTasks
             Console.Clear();
             Console.WriteLine("Activity 1: Which number is larger?");
             Console.WriteLine("Please type a number and press the ENTER key.");
-            int num1 = int.Parse(Console.ReadLine());
+            decimal num1 = decimal.Parse(Console.ReadLine());
             Console.WriteLine("Please type another number and press the ENTER key");
-            int num2 = int.Parse(Console.ReadLine());
+            decimal num2 = decimal.Parse(Console.ReadLine());
 
             if (num1 > num2)
             {
@@ -193,10 +193,10 @@ namespace topicThreeAllTasks
                     Console.WriteLine("Your PIN has been set!");
 
                 else
-                    Console.WriteLine("This PIN number is not within the right parameters");
+                    Console.WriteLine("Error! Your PIN numbers did not match. Your PIN was not set");
             }
             else
-                Console.WriteLine("Error! Your PIN numbers did not match. Your PIN was not set");
+                Console.WriteLine("This PIN number is not within the right parameters");
 
             Console.WriteLine("\nTask 5 is complete. Press any key to return to the main menu.");
             Console.ReadLine();
