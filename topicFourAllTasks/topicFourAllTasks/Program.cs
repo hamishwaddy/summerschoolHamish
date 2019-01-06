@@ -45,7 +45,9 @@ namespace topicFourAllTasks
                 return true;
             }
             else if (result == "4")
+            {
                 return false;
+            }
             else
             {
                 return true;
