@@ -1,0 +1,16 @@
+Lists
+Collections
+For many of the applications we make, you will want to create and manage groups of related objects. There are two main ways we group objects: by creating arrays of objects, and by creating collections of objects. Arrays are most useful for creating and working with a fixed number of strongly-typed objects.
+
+Collections provide a more flexible way to work with groups of objects. Unlike arrays, the group of objects you work with can grow and shrink dynamically as the needs of the application change. For some collections, you can assign a key to any object that you put into the collection so that you can quickly retrieve the object by using the key. An example of one of these keyed collections would be a dictionary which we will look at a bit later on.
+
+A collection is a class, so you must declare an instance of the class before you can add elements to that collection, the same as when we create an array without the data using the new keyword.
+
+If your collection contains elements of only one type, you can use one of the classes in the System.Collections.Generic namespace. A generic collection enforces type safety, this means that no other data type can be added to it. When you retrieve an element from a generic collection, you do not have to determine its data type or convert it as the collection is strongly typed to what ever the data inside of it is. So now lets have a look at one of the collections called a List<T>.
+
+
+
+
+List<T>
+A List<T> is a generic collection which enables you to work with a strongly typed group of objects. The data type of the objects being stored in the list goes where the <T> is, where the T represents any data type. When we replace the T with the data type of the elements, the list will only accept the same data type and this is then refer. The following example creates a list of strings and then iterates through the strings by using a or foreach statement.
+

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonDictionaryTaskThree", "PersonDictionaryTaskThree\PersonDictionaryTaskThree.csproj", "{18E3EBE3-91ED-4A01-B9D0-57A3498977EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18E3EBE3-91ED-4A01-B9D0-57A3498977EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18E3EBE3-91ED-4A01-B9D0-57A3498977EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18E3EBE3-91ED-4A01-B9D0-57A3498977EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18E3EBE3-91ED-4A01-B9D0-57A3498977EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1547763-2FE1-4718-9D1C-50E41D838962}
+	EndGlobalSection
+EndGlobal

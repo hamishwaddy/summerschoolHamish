@@ -27,8 +27,12 @@ namespace Translator
             Console.WriteLine("**********************************************");
             Console.WriteLine("***************** Translator *****************");
             Console.WriteLine("**********************************************");
-            Console.WriteLine($"\nYour selected translation: {input}\n");
-            Console.WriteLine($"Hello is translated as: " + helloTranslator[input -1]);
+            //Console.WriteLine($"\nYour selected translation: {input}\n");
+            //Console.WriteLine($"Hello is translated as: " + helloTranslator[input -1]);
+
+            Console.WriteLine("\nYour selected translation: {0}", input);
+            Console.WriteLine("\nHello is translated as: {0}", helloTranslator[input - 1]);
+
 
 
 

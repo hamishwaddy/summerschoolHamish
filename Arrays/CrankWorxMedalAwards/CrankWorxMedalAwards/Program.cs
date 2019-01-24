@@ -36,8 +36,9 @@ namespace CrankWorxMedalAwards
             Console.Write("\nWhich medal holder would you like to see displayed? (enter 1, 2 or 3)");
             int userInput = int.Parse(Console.ReadLine());
 
-            Console.WriteLine($"\nThat medal winner is: {names[userInput -1]}");
-            
+            //Console.WriteLine($"\nThat medal winner is: {names[userInput -1]}");
+            Console.WriteLine("\nThat medal winner is: {0}", names[userInput-1]);
+
             Console.WriteLine("\nPress any key to exit");
             Console.ReadKey();
         }

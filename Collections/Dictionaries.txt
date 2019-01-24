@@ -1,0 +1,72 @@
+Dictionaries
+What are they?
+A dictionary in C# is similar to an ordinary dictionary, say for example the English oxford dictionary which contains words and their definitions, a c# dictionary contains keys and values where the key is like the word and the value can be thought of like the definition.
+
+Dictionary<TKey, TValue> is a generic collection that is part of the Systems.Collection.Generics namespace where the TKey represent some datatype to organise the dictionary and TValue is the datatype for the value you wish to store.
+
+
+
+
+Dictionary Initialisation
+A dictionary can be initialized using either the dictionary class or with the IDictionary interface but at this point it is recommended to use the Dictionary class. Although the interface allows for more functionality, it suffers from performance issues due to these extra functionalities and it is therefore recommended that if you don't need them, stick with the dictionary class.
+
+
+
+In this example we have created a new dictionary called dict and specified the data types for the keys and the values. I have set the key to be of type int and the value type to be a string. Potentially i could use any C# data type as the keys and values.
+
+
+
+Properties and Methods
+Just like we saw with the array class last week, dictionaries have a collection of properties and methods that we can use to work with. Here is a link to the MSDN site which explains all properties and methods we have available:
+
+
+
+
+
+Working with Dictionaries
+The following are some examples on how to work with the dictionary class using the associated methods and properties.
+
+Adding elements to your dictionary:
+
+
+Dictionary Initialisation with data:
+
+
+Accessing the elements in your dictionary:
+Foreach Loop:
+
+
+For Loop:
+
+
+Accessing Individual Elements:
+A dictionary can be used sort of like an array in that you can access individual elements by using a reference. To do this with a dictionary you use the key rather then the index with an array.
+
+
+
+Removing Elements:
+We can use the Remove() method to remove anything we need to from our dictionaries. The Remove() method has 2 overloads that we can use, the first accepts only the key. This will remove the data with the corresponding key. The second takes bot the key and value as a KeyValuePair<> and removes the data if found. We predominately only use the first one although both are acceptable.
+
+
+
+Note:
+
+
+
+
+Exercises
+Task 1.
+Create an application that will user a dictionary to hold info about fruit. This dictionary needs to contain the fruit type and the cost.
+
+Task 2.
+Create an application which uses a dictionary to store strings taken from a users input. You need to use a loop to take in 10 inputs and save them as the values in the dictionary. You are also required to use the loop counter as the keys for string values. Output the resulting dictionary to the user.
+
+Task 3.
+Create an app that contains a Person class which has properties for first name, last name and age. 
+
+This app also needs to use a dictionary to store the person objects that are created. The key needs to be a 4 digit number and is populated by using a loop. Create 5 person object with the necessary properties filled in. 
+
+Display all of the person object properties as well as their id number to the user using a loop.
+
+It is your choice as to how you wish to implement this but keep in mind all of the lessons we have learnt up to this point.
+

@@ -1,0 +1,11 @@
+Weekdays Exercise:
+I didn't realise you could put the '-1' when declaring the variable 'userInput'. I thought this needed to be done as part of the DaysOfWeek method. I also learnt that I could pass an 'int' variable to a 'string' method. I had read this but wasn't applying it! I also learnt that if you don't 'return' a variable within a method, it will throw an error (unless the method is 'void'???) as there is nothing for the 'Main' method to work with when the new method is referenced within Main.
+BMI Exercise:
+When returning the BmiCalc method to the Main method you need to pass in the arguments that the method will be using (in this case userHeight & userWeight). If you don't include these you get an error message saying there is no argument for the created method. Also, in order to round the BMI to 2 decimal places an extra line of code is included in the BmiCalc Method ('result = Math.Round(result, 2);').
+
+
+Classes:
+Keep attributes as private, don't set them as public (they are the private attributes of the class you are creating and you don't want users having access to them).
+Create the getters and setters for each attribute. Rememember that they can be set to private so that you can restrict access to certain attributes if you need to.
+If you create a constructor (which kind of declares the items within the class) then you can set these attributes/properties when you create the new instance of the class. If you don't know the values for the attributes (maybe the user will be inputting these) then you can't set a constructor.
+When generating a random number this needs to be created as a method. The 'random' number generated is not actually random as the same formula is always used to create the 'random'. This is why the random ID numbers in the 'create an animal' task have the same random ID's.

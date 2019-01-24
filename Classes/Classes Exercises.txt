@@ -1,0 +1,43 @@
+Classes | Exercises
+Task 1.
+Create an application that contains a class call Animal. This animal class needs to contain the following:
+
+2 properties - one for the animals name and one for the sound the animal makes.
+
+The necessary getters and setters for the properties.
+
+A method called animalSays() that can build the string "The xxxx says zzzz" eg. "The cow says moo"
+
+A constructor for all of the Animals properties. Make sure it uses the properties setters and not the property itself.
+
+From the main method you need to:
+
+Prompt the user to enter the name for the animal and save it in an appropriate variable.
+
+Prompt the user to enter the sound for the animal and save it in an appropriate variable.
+
+Create an Animal object and use the variables to populate the constructor.
+
+Use the objects AnimalSays() method to display the information back to the user.
+
+
+
+
+Task 2.
+Create an application that contains a class called Employee. This Employee class needs to contain the following:
+
+4 auto properties - First name, Last name, Gross annual salary, tax rate (as a percentage)
+
+A method called NetSalary() that can return the employee objects net salary (after tax). (You may need to use Math.Round())
+
+A constructor for all of the Employees properties.
+
+From the main method you need to:
+
+Prompt the user to enter the data necessary to fill the employee properties and save them to appropriate variables.
+
+Create an Employee object and use the variables to populate the constructor.
+
+Use the objects properties to display the information back to the user.
+
+Call the employee objects method to display the net salary to the user.

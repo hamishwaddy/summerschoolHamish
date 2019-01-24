@@ -166,7 +166,6 @@ namespace TopicSixAllTasks
             Random rnd = new Random();
             int index = rnd.Next(raffleTickets.GetLength(0));
             string randomWinner = raffleTickets[index, 1];
-            string randomWinningTicket = raffleTickets[index, 0];
 
             Console.WriteLine("\nThe winning ticket number is: Ticket " + (index + 1) + ".");
             Console.WriteLine("\n*************************************************");

@@ -1,0 +1,60 @@
+Arrays | Revision
+Arrays
+Currently we have only done some introductory work with arrays so we need to expand on that to get us up to speed so lets start off with a couple of exercises to refresh our memories.
+
+Revision Task 1.
+Create an application that can hold 5 peoples names. It needs to use an array that can hold 5 strings and can be populated by user at run time.
+
+
+
+Revision Task 2.
+Create an application that use a loop to fill an int array of size 10 with random numbers between 1 to 10. After this loop has finished calculate and display the average
+
+
+
+Arrays provide us with a away of collecting our data in to a group to work with. These collections can be passed, accessed and reused just like any other object that we have used up to this point. What we haven't really looked at yet are the pre-made methods and properties that the .net Framework provides us to use, although we have used one already, can you name which one?
+
+
+
+Array Class Methods and Properties
+Behind the scenes, Microsoft has a class called Array which defines all of the characteristics, properties and methods that an array can use. Lets go have a look at the Microsoft documentation for the Array class.
+
+
+
+How do i use the properties?
+To use a property from the array class, in our code we need to use the name our the array that we are using followed by a full stop the the name of the property we what to use. An example of this is how we have been using the Length property for our arrays, i.e:
+
+
+By far the most commonly used array property is the Length but there are others that you may come across. Another example of an array property is the .Rank which used used to show the number of dimensions an array has, i.e:
+
+
+The main thing to take away from this is that to use an objects property, in your code you need to reference it by name followed by a full stop then the name of the property.
+
+
+
+How do i use the methods?
+To be able to use the methods that have been created for the array class we need to reference the base class itself, this is done by using the keyword Array. By using the keyword Array, we now have access to the methods created inside of that class. One of the most commonly used method is the Sort method which will sort your array according to the parameters you give it. If we look at the MSDN site you will see that there are several Sort methods that accept different parameters in order to get whatever your desired result may be. In the following example i will use basic Sort method to sort an array in ascending order, i.e:
+
+
+As you can see in the code above I used the Keyword Array followed by a full stop the the name of the method, in this case Sort, then in the brackets I pass the required parameters, for this example the only required parameter is the array to be sorted. The result is that the array "nums" will be sorted into ascending order.
+
+Remember, the methods for the Array class need to be called by using the Array keyword followed by the name of the method you wish to call and pass that method the required parameters, one of which will almost certainly be your array.
+
+Now to practice these concepts i want you to create an application that will fill an array with 20 random numbers between 1 and 100, sort that array using the Sort method and display the unsorted and sorted array using the Length property as part of any loops.
+
+ 
+
+So now we understand the ways to use the properties and methods associated to most all object classes that we will likely use in C#, the next step is to practice using these properties and methods to achieve tasks so we don't have to remake code that has already been done.
+
+
+
+Exercises
+Make and application that has an array that can hold 50 random numbers between 1 and 100. Display the contents of this array.
+
+Extend your application so that it will use an Array Class method to find the index of one of the numbers that is displayed in your array.
+(Hint: You need to find the index of the number your looking for.)
+
+Extend the application to copy the array to a new array.
+
+Extend your application to reverse the original array and display both the original and copied arrays.
+(Note: One array should be ascending and the other should be descending)
